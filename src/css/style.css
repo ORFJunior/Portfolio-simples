@@ -7,7 +7,7 @@ body{
     font-family: "Poppins", sans-serif;
     margin: 0 auto;
     max-width: 1120px;
-    background: linear-gradient(150deg, #000000, #201894);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,91,255,1) 100%);
     background-size: 120% 120%;
 }
 
@@ -19,22 +19,21 @@ body{
     padding: 30px 15px;
 }
 
-.cabecalho .logo{
+.cabecalho #logo{
     width: 65px;
     height: 65px;
-    border-radius: 50%;
+    border-radius: 20%;
     border: 2px dotted #fff;
-    text-decoration: underline;
     text-align: center;
-    line-height: 55px;
+    line-height: 62px;
 
     font-family: "Raleway", sans-serif;
     transition: 0.2s;
 }
 
-.cabecalho a:hover .logo{
-    color: #9443d8;
-    border: 2px solid #9443d8;
+.cabecalho a:hover #logo{
+    color: #005bff;
+    border: 2px solid #005bff;
 }
 
 
@@ -47,7 +46,7 @@ body{
 }
 
 .cabecalho .menu li a:hover{
-    background-color: #9443d8;
+    background-color: #020024;
     color: #fff;
     border-radius: 50px;
 }
@@ -72,7 +71,7 @@ body{
 
 .home .informacoes h1{
     font-family: "Raleway", sans-serif;
-    font-size: 45px;
+    font-size: 40px;
     margin-bottom: 20px;
 }
 
@@ -85,6 +84,7 @@ body{
 .home .redes-sociais{
     display: flex;
     gap: 20px;
+    justify-content: center;
 }
 
 .home .redes-sociais a i{
@@ -99,8 +99,8 @@ body{
 }
 
 .home .redes-sociais a i:hover{
-    color: #9443d8;
-    border: 1px solid #9443d8;
+    color: #020024;
+    border: 1px solid #020024;
     transform: scale(1.1);
 }
 
@@ -115,7 +115,7 @@ body{
 }
 
 .home .foto.sombra-interna{
-    background: linear-gradient(to right, #2f3358, #5936d8, #9197e9);
+    background: linear-gradient(90deg, rgba(0,91,255,1) 0%, rgba(117,166,255,1) 35%, rgba(205,223,255,1) 100%);
 
     background-size: 180% 180%;
     animation: gradient-animation 5s ease infinite;
@@ -205,8 +205,34 @@ body{
 
 
 .projetos .btn-mostrar-projetos:hover{
-    background-color: #9443d8;
+    background-color: #005bff;
     transition: 0.3s;
+}
+
+.projetos .btn-ocultar-projetos{
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    color:#fff;
+    width: 180px;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+}
+
+.projetos .btn-ocultar-projetos:hover{
+    background-color: #005bff;
+    transition: 0.3s;
+}
+
+.projetos .btn-ocultar-projetos.adicionar{
+    display: block;
 }
 
 .projetos .btn-mostrar-projetos.remover{
